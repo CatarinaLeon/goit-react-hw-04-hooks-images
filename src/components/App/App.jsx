@@ -33,9 +33,7 @@ const App = () => {
   }, [currentPage, searchQuery]);
 
   const loadMore = () => {
-    setLoading(!loading);
     setCurretPage((prev) => prev + 1);
-    setLoading(loading);
   };
 
   const handleQueryChange = (query) => {
